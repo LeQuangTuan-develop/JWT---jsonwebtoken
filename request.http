@@ -1,0 +1,24 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJRdWFuZ1R1YW4iLCJpYXQiOjE2Mzg2MTgzODUsImV4cCI6MTYzODYxODY4NX0.-TNK4_43vWZiWpNLGHTDK-61NFivNfnmuvpX70kfu9s
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "QuangTuan"
+}
+
+###
+
+POST http://localhost:5000/token
+content-type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJMb2NzYW1hIiwiaWF0IjoxNjM4NjE2NTcxLCJleHAiOjE2Mzg2MjAxNzF9.lIwejdBkBHjf3dAmvGn5jKeHkiNVuLv30vmyFXjMYTw"
+}
+
+###
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJMb2NzYW1hIiwiaWF0IjoxNjM4NjE4NDI4LCJleHAiOjE2Mzg2MTg3Mjh9.dW5Uqx9sRaZPy8YH1PNndx7LjiMH8Rnn2G1FixG6vxo
